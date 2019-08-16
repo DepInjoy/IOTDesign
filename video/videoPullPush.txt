@@ -1,0 +1,19 @@
+https://github.com/arut/nginx-rtmp-module
+./configure --add-module=../nginx-rtmp-module --with-http_ssl_module
+https://www.jianshu.com/p/a210eab31f45
+
+安装OBS
+https://blog.csdn.net/kingroc/article/details/50829213
+
+OBS如何推流
+https://jingyan.baidu.com/article/380abd0a2d25ba1d91192c79.html
+
+
+VLC设置为默认播放器
+https://www.cnblogs.com/EasonJim/p/7119302.html
+
+1、安装依赖库
+sudo apt-get install libpcre3 libpcre3-dev
+sudo apt-get install openssl libssl-dev
+
+rtmp://localhost/vod/SampleVideo_1280x720_1mb.mp4

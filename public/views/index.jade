@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title=title
+        script(src="../scripts/jQuery/jquery-3.4.1.min.js")
+    body
+        form(method="post", action="/")
+            div
+                label(from="user") User
+                input(type='number', name="user")
+
+            div
+                label(from="led") Led
+                input(type='checkbox', checked=false, name="led")
+
+            input(type="submit", value='OK')
