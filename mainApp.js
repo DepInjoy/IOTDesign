@@ -159,5 +159,25 @@ app.post('/user/:user_id/devices/:devices_id/result/:result_id', function (req, 
    });
 });
 
-
+//MQTT
+var mqtt = require("mqtt");
+var mosca = require('mosca');
+var mqttServer = require('./modules/mqttServer');
+var moscaServer = mosca.Server({
+    port:       1886
+});
+mqttServer(moscaServer);
+/*
+moscaServer.on("connect", function (packet) {
+    self.clients[packet.clientId] = client;
+    client.id = packet.clientId;
+    console.log("CONNECT: client id: " + client.id);
+    client.connack({returnCode: 0});
+});
+ */
+/*
+mqtt.MqttServer(mqttServer).listen(1885, function () {
+    console.log("MQTT Server is listening on 1883 port.")
+});
+*/
 app.listen(8080);
